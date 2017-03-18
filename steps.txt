@@ -1,0 +1,4 @@
+sbt clean assembly
+
+/usr/hdp/current/spark-client/bin/spark-submit --properties-file  src/main/resources/impression-processing.conf --class "com.zeotap.enrichers.Driver" --master yarn --deploy-mode client target/scala-2.10/RawStreamBatchEnricher-assembly-0.1.jar
+
